@@ -1,14 +1,18 @@
-.search {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 95vh;
+:root {
+    --search-blue: #5496ff;
 }
 
 * {
     margin: 0;
     padding: 0;
     /* outline: 1px solid red; */
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
 }
 
 .container  {
@@ -29,9 +33,10 @@ nav li {
 
 input[type="submit"] {
     color: white;
-    background-color: blue;
+    background-color: var(--search-blue);
     padding: 5px;
     margin: 5px;
+    border: 0;
 }
 
 input[type="text"] {
@@ -39,6 +44,9 @@ input[type="text"] {
     width: 250px;
     margin: auto;
     padding: auto;
+    border: 1px solid grey;
     align-self: center;
     justify-self: center;
+    box-shadow: -5px 5px 41px 0px rgba(0,0,0,0.35);
+    border-radius: 25px;
 }
