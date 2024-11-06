@@ -30,9 +30,14 @@
 
 /* CSS Coding for the nav-bar/.flex-wrapper */
 
-.nav-link {
+.nav-link, .nav-link:visited {
     text-decoration: none;
     color: black;
+}
+
+.nav-link:visited {
+    text-decoration: none;
+    
 }
 
 .nav-link:hover {
