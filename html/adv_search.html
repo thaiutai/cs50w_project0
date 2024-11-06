@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="/css/styles.css" />
-        <link rel="stylesheet" href="/css/advanced_search.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
@@ -11,8 +10,10 @@
     </head>
 
     <body>
-        <div class="flex-wrapper">
-            <img src="/imgs/thaiutai_google.svg" alt="fake google"/>
+        <div class="div-navbar">
+            <div id="navbar-logo">
+                <img id="logo" src="/imgs/thaiutai_google.svg" alt="fake google"/>
+            </div>
             <nav>
                 <ul>
                     <li><a class="nav-link" href="./index.html">Google Search</a></li>
@@ -20,10 +21,10 @@
                 </ul>
             </nav>
         </div>
+
         <div class="wrapper">
             <h1 id="adv_title">Advanced Search</h1>
         </div>
-
     <!-- as_q=all as_epq=exact as_oq=any as_eq=-not -->
 
         <div class="search-wrapper">
@@ -31,13 +32,13 @@
             <form action="https://www.google.com/search" method="get">
                 <div class="search-labels">
                     <label for="as_q"><span>all these words: 
-                        </span><input type="text" name="as_q" required></label>
+                        </span><input class="adv-search-textbox" type="text" name="as_q" required></label>
                     <label for="as_epq"><span>this exact word or phrase: 
-                        </span><input type="text" name="as_epq"></label>
+                        </span><input class="adv-search-textbox" type="text" name="as_epq"></label>
                     <label for="as_oq"><span>any of these words: 
-                        </span><input type="text" name="as_oq"></label>
+                        </span><input class="adv-search-textbox" type="text" name="as_oq"></label>
                     <label for="as_eq"><span>none of these words: 
-                        </span><input type="text" name="as_eq"></label>
+                        </span><input class="adv-search-textbox" type="text" name="as_eq"></label>
                 </div>
                 <input type="submit" value="Advanced Search">
             </form>

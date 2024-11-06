@@ -1,19 +1,20 @@
 :root {
-    --button-color: #f5f5f5f5;
-    --color-blk: rgb(90,90,90);
+    --button-color-white: #f5f5f5;
+    --color-blk: #5A5A5A;
+    --button-color-blue: #2D99FF;
 }
 
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.search, .flex-wrapper {
+.search-form, .div-navbar {
     display: flex;
     align-items: center;
     text-align: center;
 }
 
-.search {
+.search-form {
     height: 95vh;
     width: 50vw;
     padding: auto;
@@ -22,11 +23,17 @@
     justify-content: center;
 }
 
-.flex-wrapper  {
+.div-navbar  {
     height: 5vh;
     width: 100vw;
     flex-flow: row nowrap;
-    justify-content: flex-end;
+    justify-content: space-around;
+}
+
+#navbar-logo {
+    display: flex;
+    width: 80vw;
+    justify-content: flex-start;
 }
 
 .nav-link, .nav-link:visited {
@@ -48,8 +55,73 @@ nav li {
     padding-right: 1rem;
 }
 
+.text-search {
+    height: 3rem;
+    width: 50vw;
+    margin: auto;
+    padding-inline: 1.5em;
+    border: 1px solid rgb(219, 219, 219);
+    align-self: center;
+    justify-self: center;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
 .button {
     padding: 1em;
     margin: 1em;
     border: 0;
+    box-shadow: 1px 1px 3px 3px rgba(90, 90, 90, 0.1);
+}
+
+.grey {
+    color: var(--color-blk);
+    background-color: var(--button-color-white);
+    border-radius: 10px;
+}
+
+.blue {
+    color: var(--button-color);
+    background-color: var(--button-color-blue);
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+#logo {
+    display: flex;
+    width: 150px;
+    margin: 5px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media (max-width: 440px) {
+    #navbar-logo {
+       display: none !important;
+    }   
+}
+
+#adv_title {
+    font-weight: normal;
+    color: red;
+}
+
+.search-labels {
+    display: flex;
+    gap: 1em;
+    flex-flow: column wrap;
+}
+
+.search-labels label span {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+.adv-search-textbox {
+    padding-left: 10px;
+    flex-grow: 1;
+    height: 1.2em;
+    width: 400px;
 }

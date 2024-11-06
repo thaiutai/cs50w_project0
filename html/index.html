@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="/css/styles.css" />
-        <link rel="stylesheet" href="/css/img_and_reg_search.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
@@ -11,31 +10,21 @@
     </head>
 
     <body>
-
-        <!-- flex-wrapper class is for nav-bar -->
-        <div class="flex-wrapper">
+        <div class="div-navbar">
             <nav>
                 <ul>
-                    <li><a class="nav-link" href="./adv_search.html">Advanced Search</a></li>
                     <li><a class="nav-link" href="./img_search.html">Image Search</a></li>
+                    <li><a class="nav-link" href="./adv_search.html">Advanced Search</a></li>
                 </ul>
             </nav>
         </div>
-        
-        <!-- div-search class for the search bar form -->
-        <div class="search">
+        <div class="search-form">
             <img src="/imgs/thaiutai_google.svg" alt="fake google"/>
             <form action="https://www.google.com/search">
-                <input class="text-search" type="text" name="q" />
-
-                <!-- search-button class for the search buttons - applying css -->
-                <div class="button-container">
-                    <input class="grey button" value="I'm Feeling Lucky" name="btnI" type="submit"/>
-                    <input class="grey button" value="Google Search" name="btnK" type="submit"/>
-                </form>
-                </div>
+                <input class="text-search" type="text" name="q">
+                <input class="grey button" type="submit" value="Image Search"/>
+                <input class="grey button" value="I'm Feeling Lucky" name="btnI" type="submit"/>
             </form>
-
         </div>
 
     </body>
