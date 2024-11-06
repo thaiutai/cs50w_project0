@@ -16,24 +16,26 @@
         <div class="flex-wrapper">
             <nav>
                 <ul>
-                    <li><a class="nav-link" href="./index.html">Google Search</a></li>
                     <li><a class="nav-link" href="./adv_search.html">Advanced Search</a></li>
+                    <li><a class="nav-link" href="./img_search.html">Image Search</a></li>
                 </ul>
             </nav>
         </div>
         
         <!-- div-search class for the search bar form -->
         <div class="search">
-            <img src="./thaiutai_google.svg" alt="fake google" />
-            <form action="https://www.google.com/search" method="GET" target="_blank">
-                <input type="text" name="q">
-                <input type="hidden" name="udm" value="2">
+            <img src="/imgs/thaiutai_google.svg" alt="fake google"/>
+            <form action="https://www.google.com/search">
+                <input class="text-search" type="text" name="q" />
 
                 <!-- search-button class for the search buttons - applying css -->
-                <div class="search-button">
-                    <input type="submit" value="Image Search"/>
+                <div class="button-container">
+                    <input class="grey button" value="I'm Feeling Lucky" name="btnI" type="submit"/>
+                    <input class="grey button" value="Google Search" name="btnK" type="submit"/>
+                </form>
                 </div>
             </form>
+
         </div>
 
     </body>
