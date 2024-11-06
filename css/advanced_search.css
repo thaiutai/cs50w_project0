@@ -1,0 +1,13 @@
+img {
+    width: 150px;
+    margin: 5px;
+}
+
+#adv_title {
+    font-weight: normal;
+    color: red;
+}
+
+.search-wrapper {
+    display: flex;
+}
