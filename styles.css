@@ -6,8 +6,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* CSS Coding for the nav-bar/.flex-wrapper */
-
 .search, .flex-wrapper {
     display: flex;
     align-items: center;
@@ -30,7 +28,6 @@
     justify-content: flex-end;
 }
 
-
 .nav-link, .nav-link:visited {
     text-decoration: none;
     color: black;
@@ -38,16 +35,6 @@
 
 .nav-link:hover {
     text-decoration: underline;
-}
-
-
-/* End of CSS Coding for aforementioned title */
-
-
-
-img {
-    object-fit: cover;
-    padding-bottom: 2rem;
 }
 
 nav ul {
@@ -58,29 +45,4 @@ nav ul {
 
 nav li {
     padding-right: 1rem;
-}
-
-input[type="submit"] {
-    color: rgb(90, 90, 90);
-    background-color: var(--button-color);
-    padding: 1em;
-    margin: 1em;
-    border: 0;
-    border-radius: 10px;
-}
-
-input[type="text"] {
-    height: 3rem;
-    width: 50vw;
-    margin: auto;
-    padding-inline: 1.5em;
-    border: 1px solid rgb(219, 219, 219);
-    align-self: center;
-    justify-self: center;
-    border-radius: 25px;
-    cursor: pointer;
-}
-
-input:hover {
-    box-shadow: 1px 1px 3px 3px rgba(90, 90, 90, 0.1);
 }
