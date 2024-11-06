@@ -23,19 +23,16 @@
         
         <!-- div-search class for the search bar form -->
         <div class="search">
-
             <img src="./thaiutai_google.svg" alt="fake google" />
-            <form action="https://www.google.com/search">
-
-                <input type="text" name="q" />
+            <form action="https://www.google.com/search" method="GET" target="_blank">
+                <input type="text" name="q">
+                <input type="hidden" name="udm" value="2">
 
                 <!-- search-button class for the search buttons - applying css -->
                 <div class="search-button">
-                    <input type="submit" value="Google Search" />
+                    <input type="submit" value="Image Search"/>
                 </div>
-
             </form>
-
         </div>
 
     </body>
