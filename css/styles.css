@@ -1,33 +1,37 @@
 :root {
-    --button-color-white: #f5f5f5;
-    --color-blk: #5A5A5A;
-    --button-color-blue: #2D99FF;
+    --color-white: #f5f5f5;
+    --color-gray: #5A5A5A;
+    --color-blue: #2D99FF;
 }
 
+/* Global Styles */
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.search-form, .div-navbar {
+/* Shared Layouts */
+.search-form,
+.div-navbar {
     display: flex;
     align-items: center;
     text-align: center;
 }
 
+/* Search Form */
 .search-form {
     height: 90vh;
     width: 50vw;
-    padding: auto;
     margin: auto;
-    flex-flow: column nowrap;
+    flex-direction: column;
     justify-content: center;
 }
 
-.div-navbar  {
+/* Navbar */
+.div-navbar {
     height: 4vh;
     width: 100vw;
-    flex-flow: row nowrap;
     justify-content: space-around;
+    flex-direction: row;
 }
 
 .div-navbar.regular {
@@ -40,7 +44,9 @@
     justify-content: flex-start;
 }
 
-.nav-link, .nav-link:visited {
+/* Navigation Links */
+.nav-link,
+.nav-link:visited {
     text-decoration: none;
     color: black;
 }
@@ -49,6 +55,7 @@
     text-decoration: underline;
 }
 
+/* Navbar List */
 nav ul {
     display: flex;
     list-style: none;
@@ -59,38 +66,41 @@ nav li {
     padding-right: 1rem;
 }
 
+/* Text Search */
 .text-search {
     height: 3rem;
     width: 50vw;
     margin: auto;
-    padding-inline: 1.5em;
+    padding: 0 1.5em;
     border: 1px solid rgb(219, 219, 219);
-    align-self: center;
-    justify-self: center;
     border-radius: 25px;
     cursor: pointer;
+    align-self: center;
+    justify-self: center;
 }
 
+/* Buttons */
 .button {
     padding: 1em;
     margin: 1em;
-    border: 0;
-    box-shadow: 1px 1px 3px 3px rgba(90, 90, 90, 0.1);
+    border: none;
+    box-shadow: 1px 1px 3px rgba(90, 90, 90, 0.1);
 }
 
-.grey {
-    color: var(--color-blk);
-    background-color: var(--button-color-white);
+.button.grey {
+    color: var(--color-gray);
+    background-color: var(--color-white);
     border-radius: 10px;
 }
 
-.blue {
-    color: var(--button-color);
-    background-color: var(--button-color-blue);
+.button.blue {
+    color: var(--color-white);
+    background-color: var(--color-blue);
     font-weight: bold;
     border-radius: 2px;
 }
 
+/* Logo */
 #logo {
     display: flex;
     width: 150px;
@@ -99,12 +109,14 @@ nav li {
     align-items: center;
 }
 
+/* Responsive Design */
 @media (max-width: 440px) {
     #navbar-logo {
-       display: none !important;
-    }   
+        display: none !important;
+    }
 }
 
+/* Advanced Search */
 #adv_title {
     font-weight: normal;
     color: red;
@@ -113,7 +125,8 @@ nav li {
 .search-labels {
     display: flex;
     gap: 1em;
-    flex-flow: column wrap;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .search-labels label span {
