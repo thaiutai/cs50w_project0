@@ -46,3 +46,10 @@ nav ul {
 nav li {
     padding-right: 1rem;
 }
+
+input[type="submit"] {
+    padding: 1em;
+    margin: 1em;
+    border: 0;
+    border-radius: 10px;
+}
